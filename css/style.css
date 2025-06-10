@@ -1,0 +1,391 @@
+/* --- GERAL E VARIÁVEIS --- */
+:root {
+    --color-gold: #ff9900;
+    --color-bronze: rgb(255, 132, 0);
+    --color-dark: #2c221c;
+    --color-light: #fdfaf6;
+    --color-white: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+#main-header.scrolled {
+    background-color: rgba(253, 250, 246, 0.8); 
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    box-shadow: var(--shadow);
+}
+
+#main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 75px; /* Aumentado para melhor visualização */
+    height: 75px;
+    display: inline-block;
+    margin-right: 15px; /* Aumentado para mais espaço */
+    transition: transform 0.3s ease;
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.logo-link:hover .logo-icon {
+    transform: rotate(-15deg);
+}
+
+.logo-name {
+    color: var(--color-dark);
+    font-family: var(--font-heading);
+    font-size: 2rem; /* Ajustado para consistência */
+    font-weight: 700;
+    background-color: rgba(253, 250, 246, 0.6);
+    border-radius: 5px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    background-color:  rgba(253, 250, 246, 0.6);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-gold);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Oculto por padrão em telas maiores */
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    cursor: pointer;
+    z-index: 1100; /* Garante que fique sobre outros elementos */
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-toggle:hover {
+    background-color: var(--color-gold);
+    transform: translate(1px);
+}
+
+/* --- SEÇÃO INICIAL (HERO) --- */
+#inicio {
+    height: 100vh;
+    /* A MÁGICA ACONTECE AQUI: MÚLTIPLOS BACKGROUNDS */
+    background: 
+        /* Camada de cima: O gradiente que cria a transição suave */
+        linear-gradient(to bottom, transparent 70%, var(--color-light) 100%),
+        
+        /* Camada de baixo: A sua imagem de fundo */
+        url('../images/Banner Divas Bronze.jpg') no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+}
+
+#inicio::before { /* Overlay escuro para legibilidade */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px; /* Adicionado para evitar que o texto encoste nas bordas */
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-bronze);
+    transform: translateY(-3px);
+}
+
+/* --- ESTILOS DE SEÇÃO GERAIS --- */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--color-bronze);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* --- SEÇÃO DE PREÇOS --- */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+.pricing-card {
+    background: var(--color-white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.pricing-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-dark);
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-gold);
+    margin: 15px 0;
+}
+
+/* --- NOVO ESTILO PARA O DIVISOR DE GRID --- */
+.grid-divider {
+    /* A mágica acontece aqui: o elemento se estica da primeira à última coluna */
+    grid-column: 1 / -1; 
+    
+    /* Estilos para parecer um título/divisor */
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--color-bronze);
+    margin-top: 60px; /* Espaço extra acima para separar do grupo anterior */
+    margin-bottom: -10px; /* Reduz o espaço abaixo antes do próximo grupo de cards */
+}
+
+/* --- SEÇÃO DE LOCALIZAÇÃO --- */
+#localizacao {
+    background-color: var(--color-white);
+}
+
+.location-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.address-info, .map-container {
+    flex: 1;
+}
+
+.address-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.address-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* --- RODAPÉ --- */
+#contato {
+    background: var(--color-dark);
+    color: var(--color-light);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* --- BOTÃO WHATSAPP --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: var(--color-white);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* --- ANIMAÇÕES DE SCROLL --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 3rem; }
+    .hero-content p { font-size: 1.1rem; }
+    .section-title { font-size: 2.2rem; }
+    
+    .menu-toggle {
+        display: block; /* Mostra o botão do menu */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Começa fora da tela */
+        width: 70%;
+        height: 100vh;
+        background-color: var(--color-white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px; /* Espaçamento entre os links */
+        transition: right 0.5s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.active {
+        right: 0; /* Traz o menu para a tela */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte para toque */
+    }
+
+    .location-content { flex-direction: column; }
+    .logo-name { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .logo-name { display: none; } /* Oculta o nome para economizar espaço */
+    .logo-icon { width: 45px; height: 45px; }
+}
