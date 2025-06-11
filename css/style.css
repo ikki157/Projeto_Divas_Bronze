@@ -348,10 +348,7 @@ section {
 }
 
 /* --- RESPONSIVIDADE --- */
-@media (max-width: 768px) {
-    .hero-content h1 { font-size: 3rem; }
-    .hero-content p { font-size: 1.1rem; }
-    .section-title { font-size: 2.2rem; }
+@media (max-width: 900px) {
     
     .menu-toggle {
         display: block; /* Mostra o botão do menu */
@@ -379,12 +376,19 @@ section {
     .nav-links a {
         font-size: 1.2rem; /* Aumenta o tamanho da fonte para toque */
     }
+    .logo-name { font-size: 1.7rem; }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 3rem; }
+    .hero-content p { font-size: 1.1rem; }
+    .section-title { font-size: 2.2rem; }
 
     .location-content { flex-direction: column; }
     .logo-name { font-size: 1.5rem; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     .hero-content h1 { font-size: 2.5rem; }
     .logo-name { display: none; } /* Oculta o nome para economizar espaço */
     .logo-icon { width: 45px; height: 45px; }
