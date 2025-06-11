@@ -388,4 +388,5 @@ section {
     .hero-content h1 { font-size: 2.5rem; }
     .logo-name { display: none; } /* Oculta o nome para economizar espaço */
     .logo-icon { width: 45px; height: 45px; }
+    .pricing-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } /* Ajuste no Grid de Preços */
 }
