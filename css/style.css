@@ -533,6 +533,10 @@ section {
 
     .location-content { flex-direction: column; }
     .logo-name { font-size: 1.5rem; }
+    .tab-link {
+        flex-direction: column; /* Coloca os links das abas em coluna */
+        margin: 8px; /* Espaçamento entre os links */
+    }
 }
 
 @media (max-width: 490px) {
