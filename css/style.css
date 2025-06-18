@@ -40,14 +40,37 @@ body {
     width: 100%;
     z-index: 1000;
     padding: 20px 0;
-    transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    /* Adicionamos um gradiente sutil para garantir a legibilidade do texto no topo */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+    transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
 #main-header.scrolled {
-    background-color: rgba(253, 250, 246, 0.8); 
+    background: rgba(253, 250, 246, 0.9); /* Um pouco mais opaco para legibilidade */
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
     padding: 15px 0;
     box-shadow: var(--shadow);
+    /* Removemos o gradiente quando o header tem fundo sólido */
+    background-image: none;
+}
+
+/* --- ESTILOS PARA O HEADER DURANTE O SCROLL --- */
+
+/* Altera a cor do logo e dos links quando a página é rolada */
+#main-header.scrolled .logo-name,
+#main-header.scrolled .nav-links a {
+    color: var(--color-dark);
+}
+
+/* Retorna a cor da linha de hover para dourado no scroll */
+#main-header.scrolled .nav-links a:hover::after {
+    background-color: var(--color-gold);
+}
+
+/* Altera a cor do ícone do menu para escuro no scroll */
+#main-header.scrolled .menu-toggle {
+    color: var(--color-dark);
 }
 
 #main-header nav {
@@ -82,17 +105,16 @@ body {
     font-family: var(--font-heading);
     font-size: 2rem; /* Ajustado para consistência */
     font-weight: 700;
-    background-color: rgba(253, 250, 246, 0.6);
     border-radius: 5px;
     padding: 8px;
     text-transform: uppercase;
+    color: var(--color-white);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
-    background-color:  rgba(253, 250, 246, 0.6);
     border-radius: 5px;
     padding: 8px;
 }
@@ -104,6 +126,7 @@ body {
     font-size: 1rem;
     position: relative;
     padding-bottom: 5px;
+    color: var(--color-white);
 }
 
 .nav-links a::after {
