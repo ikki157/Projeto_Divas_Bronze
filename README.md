@@ -1,9 +1,3 @@
-Claro\! Com base nos arquivos do seu projeto, gerei uma sugestão de `README.md` para você adicionar ao seu repositório no GitHub.
-
-Este arquivo explica o que é o projeto, quais tecnologias foram usadas, suas principais funcionalidades e como alguém pode rodá-lo localmente.
-
------
-
 # Espaço Divas Bronze - Landing Page
 
 ## 📜 Sobre o Projeto
