@@ -482,7 +482,7 @@ section {
     transform: scale(1.1);
 }
 
-/* --- ANIMAÇÕES DE SCROLL --- */
+/* --- ANIMAÇÕES DE SCROLL --- 
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -492,7 +492,7 @@ section {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 900px) {
