@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-g">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Divas Bronze - O Brilho que Você Merece</title>
     
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- Navegação -->
     <header id="main-header">
         <nav class="container">
             <a href="#inicio" class="logo-link">
@@ -33,6 +33,8 @@
         </nav>
     </header>
 
+<!-- Conteúdo Principal -->
+ <!-- Hero -->
     <main>
         <section id="inicio">
             <div class="hero-content">
@@ -42,57 +44,118 @@
             </div>
         </section>
 
+ <!-- Preços -->
+  <!-- Preços Normais-->
         <section id="precos">
-            <div class="container">
-                <h2 class="section-title reveal">Nossos Serviços</h2>
+    <div class="container">
+        <h2 class="section-title reveal">Nossos Serviços</h2>
+
+        <div class="tabs-nav reveal">
+            <button class="tab-link active" data-tab="servicos">Serviços Individuais</button>
+            <button class="tab-link" data-tab="combos">Combos Especiais</button>
+        </div>
+
+        <div class="tabs-content">
+
+            <div id="servicos" class="tab-pane active">
                 <div class="pricing-grid">
                     <div class="pricing-card reveal">
                         <h3>Banho de Lua</h3>
                         <p class="price">R$ 70</p>
-                        <p>Realce sua pele com nosso Banho de Lua, um tratamento completo que clareia os pelos, remove células mortas e hidrata profundamente, revelando uma pele macia, luminosa e irresistível ao toque.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Clareia os pelos do corpo</li>
+                            <li><i class="fas fa-check"></i> Remove células mortas</li>
+                            <li><i class="fas fa-check"></i> Hidratação profunda</li>
+                            <li><i class="fas fa-check"></i> Deixa a pele macia e luminosa</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
                     </div>
                     <div class="pricing-card reveal">
                         <h3>Clareamento de Pele e Pelos</h3>
                         <p class="price">R$ 90</p>
-                        <p>Prepare sua pele para um bronzeado perfeito com o Clareamento de Pele e Pelos, uma esfoliação profunda que remove manchas e uniformiza o tom, garantindo uma marquinha mais nítida e duradoura.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Esfoliação e hidratação</li>
+                            <li><i class="fas fa-check"></i> Uniformiza o tom da pele</li>
+                            <li><i class="fas fa-check"></i> Remove manchas superficiais</li>
+                            <li><i class="fas fa-check"></i> Prepara a pele para um bronze perfeito</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Clareamento." class="btn-price" target="_blank">Agendar Agora</a>
                     </div>
                     <div class="pricing-card reveal">
                         <h3>Bronze Natural</h3>
                         <p class="price">R$ 70</p>
-                        <p>Conquiste a marquinha dos seus sonhos com o nosso Bronze Natural, que utiliza a energia do sol de forma segura para proporcionar uma cor dourada, uniforme e com aspecto saudável.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Bronzeamento com exposição solar segura</li>
+                            <li><i class="fas fa-check"></i> Cor dourada, uniforme e saudável</li>
+                            <li><i class="fas fa-check"></i> A marquinha perfeita dos seus sonhos</li>
+                            <li><i class="fas fa-check"></i> Produtos de alta qualidade</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20Natural." class="btn-price" target="_blank">Agendar Agora</a>
                     </div>
                     <div class="pricing-card reveal">
                         <h3>Bronze no Paredão</h3>
                         <p class="price">R$ 120</p>
-                        <p>Para um resultado imediato e impactante, escolha o Bronze Paredão: uma técnica de bronzeamento que entrega uma cor intensa e uma marquinha definida em uma única sessão.</p>
-                    </div>
-
-                    <h3 class="grid-divider reveal">Combos</h3>
-
-                    <div class="pricing-card reveal">
-                        <h3>Bronze Natural + Banho de Lua</h3>
-                        <p class="price">R$ 140</p>
-                        <p>Experimente a combinação perfeita de luminosidade e cor! Nosso combo une a delicadeza do Banho de Lua, que doura os pelos e hidrata, com a intensidade do Bronze Natural para uma pele radiante e uma marquinha espetacular.</p>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Bronze no Paredão + Banho de Lua</h3>
-                        <p class="price">R$ 190</p>
-                        <p>A combinação perfeita para um brilho instantâneo. Este combo une a delicadeza do Banho de Lua, que clareia os pelos e hidrata profundamente, com a cor intensa e a marquinha definida do nosso Bronze Paredão para um resultado impactante em uma única sessão.</p>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Bronze Natural + Banho de Lua + Clareador de Pele e Pelos</h3>
-                        <p class="price">R$ 200</p>
-                        <p>O tratamento completo para uma pele radiante e um bronzeado saudável. Este combo une nosso Clareador para uniformizar o tom da pele e dourar os pelos, o Banho de Lua que hidrata profundamente e remove células mortas, e finaliza com a beleza do Bronze Natural para uma cor dourada e a marquinha dos seus sonhos conquistada sob o sol.</p>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Bronze no Paredão + Banho de Lua + Clareador de Pele e Pelos</h3>
-                        <p class="price">R$ 250</p>
-                        <p>A combinação definitiva para um resultado impecável e imediato. Preparamos sua pele com o Clareador para um tom uniforme e pelos luminosos, seguido da hidratação profunda do Banho de Lua para um toque macio e irresistível. O tratamento é coroado com o Bronze Paredão, que entrega uma cor intensa e uma marquinha definida em uma única sessão.</p>
+                        <ul class="features-list">
+                             <li><i class="fas fa-check"></i> Resultado imediato e impactante</li>
+                             <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
+                             <li><i class="fas fa-check"></i> Ideal para quem tem pouco tempo</li>
+                             <li><i class="fas fa-check"></i> Sessão única com resultado poderoso</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20no%20Pared%C3%A3o." class="btn-price" target="_blank">Agendar Agora</a>
                     </div>
                 </div>
             </div>
-        </section>
-
+  <!-- Combos -->
+            <div id="combos" class="tab-pane">
+                <div class="pricing-grid">
+                     <div class="pricing-card reveal">
+                        <h3>Bronze Natural + Banho de Lua</h3>
+                        <p class="price">R$ 140</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Clareamento de pelos e hidratação</li>
+                            <li><i class="fas fa-check"></i> Bronzeado natural e uniforme</li>
+                            <li><i class="fas fa-check"></i> Pele luminosa e marquinha espetacular</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20Natural%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                    </div>
+                    <div class="pricing-card reveal featured">
+                        <div class="featured-badge">Mais Popular</div>
+                        <h3>Bronze no Paredão + Banho de Lua</h3>
+                        <p class="price">R$ 190</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Brilho instantâneo e hidratação</li>
+                            <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
+                            <li><i class="fas fa-check"></i> Resultado impactante em uma sessão</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20no%20Paredão%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                    </div>
+                    <div class="pricing-card reveal">
+                        <h3>Combo Bronze Natural Completo</h3>
+                        <p class="price">R$ 200</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Clareador de Pele e Pelos</li>
+                            <li><i class="fas fa-check"></i> Banho de Lua (Hidratação)</li>
+                            <li><i class="fas fa-check"></i> Bronze Natural (Cor Dourada)</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20Natural%20Completo." class="btn-price" target="_blank">Agendar Agora</a>
+                    </div>
+                     <div class="pricing-card reveal">
+                        <h3>Combo Paredão Impecável</h3>
+                        <p class="price">R$ 250</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Clareador de Pele e Pelos</li>
+                            <li><i class="fas fa-check"></i> Banho de Lua (Toque Macio)</li>
+                            <li><i class="fas fa-check"></i> Bronze no Paredão (Cor Intensa)</li>
+                        </ul>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Pared%C3%A3o%20Impec%C3%A1vel." class="btn-price" target="_blank">Agendar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+ <!-- Localização -->
         <section id="localizacao">
             <div class="container">
                 <h2 class="section-title reveal">Onde nos Encontrar</h2>
@@ -108,7 +171,7 @@
                     <div class="map-container reveal">
                         <iframe 
 
-                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d572.5337527747699!2d-49.849646002220055!3d-6.516021605030461!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749598072251!5m2!1spt-BR!2sbr" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0450117863097!2d-49.854303257695456!3d-6.51598717670733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92dd9d4e9c4afe79%3A0x80544972033b36de!2sR.%20Pal%C3%A1dio%2C%2025%2C%20Cana%C3%A3%20dos%20Caraj%C3%A1s%20-%20PA%2C%2068537-000!5e0!3m2!1spt-BR!2sbr!4v1750265713873!5m2!1spt-BR!2sbr" 
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
 
@@ -119,13 +182,29 @@
         </section>
     </main>
 
+<!-- Rodapé -->
     <footer id="contato">
-        <div class="container">
-            <p>© 2025 Espaço Divas Bronze. Todos os direitos reservados.</p>
-            <p>Entre em contato: (94) 99173-8560</p>
+    <div class="container footer-content">
+        <div class="footer-info">
+            <h4>Espaço Divas Bronze</h4>
+            <p>Rua Paládio, 25 - Nova Canaã II<br>Canaã dos Carajás, PA</p>
         </div>
-    </footer>
+        <div class="footer-contact">
+            <h4>Entre em Contato</h4>
+            <p><i class="fab fa-whatsapp"></i> (94) 99173-8560</p>
+            </div>
+        <div class="footer-social">
+            <h4>Siga-nos</h4>
+             <a href="" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Espaço Divas Bronze. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
+<!-- Botão de WhatsApp -->
     <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>

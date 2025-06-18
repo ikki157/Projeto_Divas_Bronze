@@ -219,40 +219,124 @@ section {
 }
 
 /* --- SEÇÃO DE PREÇOS --- */
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px;
-}
 
-.pricing-card {
-    background: var(--color-white);
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
+/* --- Navegação das Abas --- */
+.tabs-nav {
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
 }
 
-.pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+.tab-link {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: none;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.pricing-card h3 {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
+.tab-link:hover {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.tab-link.active {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+/* --- Painéis de Conteúdo das Abas --- */
+.tab-pane {
+    display: none; /* Esconde todas as abas por padrão */
+}
+
+.tab-pane.active {
+    display: block; /* Mostra apenas a aba ativa */
+}
+
+/* --- Melhorias nos Cards de Preços --- */
+.pricing-card {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: space-between; /* Garante que o botão fique no final */
+}
+
+.pricing-card p {
+    margin-bottom: 20px;
+}
+
+/* Lista de características */
+.features-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 0 15px; /* Adiciona um respiro interno */
+    flex-grow: 1; /* Permite que a lista cresça e ocupe o espaço */
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.features-list .fa-check {
+    color: var(--color-gold);
+    margin-right: 10px;
+}
+
+/* Botão de Agendamento no Card */
+.btn-price {
+    display: inline-block;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid var(--color-dark);
+    margin-top: auto; /* Empurra o botão para o fundo do card */
+}
+
+.btn-price:hover {
+    background-color: transparent;
     color: var(--color-dark);
 }
 
-.pricing-card .price {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-gold);
-    margin: 15px 0;
+/* Card em Destaque */
+.pricing-card.featured {
+    position: relative;
+    border: 2px solid var(--color-gold);
+    overflow: hidden; /* Garante que o selo não vaze */
 }
 
-/* --- NOVO ESTILO PARA O DIVISOR DE GRID --- */
+.featured-badge {
+    position: absolute;
+    top: -1px; /* Alinha com a nova borda */
+    right: -1px;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transform: rotate(35deg) translate(20px, -20px);
+    width: 150px;
+    text-align: center;
+}
+
+/* Remove o divisor de grid antigo que não é mais necessário */
+.grid-divider {
+    display: none;
+}
+
+/* --- DIVISOR DE GRID --- */
 .grid-divider {
     /* A mágica acontece aqui: o elemento se estica da primeira à última coluna */
     grid-column: 1 / -1; 
@@ -304,10 +388,50 @@ section {
 
 /* --- RODAPÉ --- */
 #contato {
-    background: var(--color-dark);
+    background: var(--color-dark); 
+    color: var(--color-light);      
+    padding: 60px 0 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.footer-content h4 {
+    font-family: var(--font-heading);
+    color: var(--color-gold);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.footer-contact p, .footer-social a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
     color: var(--color-light);
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--color-gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
     text-align: center;
-    padding: 40px 0;
+    font-size: 0.9rem;
 }
 
 /* --- BOTÃO WHATSAPP --- */
