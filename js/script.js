@@ -47,21 +47,19 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Opcional: parar de observar o elemento depois que ele se tornou visível
                 observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1 // O elemento é revelado quando 10% dele está visível
+        threshold: 0.1 
     });
 
     revealElements.forEach((el, index) => {
-        // Adiciona um pequeno atraso na transição para cada elemento
         el.style.transitionDelay = `${index * 100}ms`;
         revealObserver.observe(el);
     });
 
-});
+}); 
 
 // --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---
 const tabLinks = document.querySelectorAll('.tab-link');

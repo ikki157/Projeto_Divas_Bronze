@@ -172,7 +172,7 @@ body {
         linear-gradient(to bottom, transparent 70%, var(--color-light) 100%),
         
         /* Camada de baixo: A sua imagem de fundo */
-        url('../images/Banner Divas Bronze.jpg') no-repeat center center/cover;
+        url('../images/Banner Divas Bronze.png') no-repeat center center/cover;
 
     display: flex;
     justify-content: center;
@@ -550,6 +550,7 @@ section {
 
     .nav-links a {
         font-size: 1.2rem; /* Aumenta o tamanho da fonte para toque */
+        color: var(--color-dark);
     }
     .logo-name { font-size: 1.7rem; }
 }
