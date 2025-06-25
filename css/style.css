@@ -83,10 +83,7 @@ body {
     width: 60px;
     height: 60px;
     margin-right: 15px;
-    background-color: var(--color-bronze);
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-radius: 50%;
-    padding: 1px;
 }
 
 .logo-link:hover .logo-icon {
@@ -238,7 +235,7 @@ section {
     border-radius: 2px;
 }
 
-/* --- SEÇÃO DE PROMOÇÕES (JÁ AJUSTADA ANTERIORMENTE) --- */
+/* --- SEÇÃO DE PROMOÇÕES --- */
 #promocoes {
     background: linear-gradient(to bottom, var(--color-light) 0%, #fff1e0 100%);
     padding: 80px 0;
@@ -280,40 +277,75 @@ section {
 #precos {
     background-color: var(--color-light);
 }
+
+.tabs-instruction {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-dark);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
 .tabs-nav {
     text-align: center;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    padding: 8px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tab-link {
     font-family: var(--font-body);
     font-weight: 600;
-    font-size: 1.1rem;
-    background: var(--color-white);
-    border: 2px solid #ddd;
-    color: var(--color-dark);
-    padding: 14px 30px;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    color: #555;
+    padding: 14px 25px;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.tab-link:hover {
-    border-color: var(--color-gold);
-    color: var(--color-gold);
+.tab-link:not(.active):hover {
+    color: var(--color-dark);
 }
 
 .tab-link.active {
-    background-color: var(--color-gold);
-    color: var(--color-white);
-    border-color: var(--color-gold);
+    background-color: var(--color-white);
+    color: var(--color-bronze);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
 }
 
-.tab-pane { display: none; }
-.tab-pane.active { display: block; }
+.tab-pane {
+    display: none;
+    animation: fadeInContent 0.5s ease-in-out forwards;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .pricing-grid {
     display: grid;
@@ -512,18 +544,6 @@ section {
     background-color: #128C7E;
 }
 
-/* --- ANIMAÇÕES DE SCROLL --- */
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 900px) {
     .menu-toggle { display: block; }
@@ -549,7 +569,7 @@ section {
     .section-title { font-size: 2.2rem; }
     .location-content { flex-direction: column; padding: 20px; }
     .logo-name { font-size: 1.5rem; }
-    .tabs-nav { flex-direction: column; gap: 10px; }
+    .tabs-nav { flex-direction: column; gap: 10px; width: auto; }
     .pricing-grid { grid-template-columns: 1fr; }
     .footer-content { grid-template-columns: 1fr; text-align: center; }
     .footer-content h4::after { left: 50%; transform: translateX(-50%); }
