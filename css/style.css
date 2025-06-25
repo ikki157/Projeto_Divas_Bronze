@@ -246,6 +246,60 @@ section {
 
 /* --- SEÇÃO DE PREÇOS --- */
 
+/* Seção de Promoção */
+
+.name-promo {
+    font-size: 1.7rem;
+    margin-bottom: 24px;
+    text-indent: 16px;
+}
+
+.text-promo {
+    color: var(--color-gold);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+.summary-promo {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.item-promo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    background-color: var(--color-light);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.item-promo del {
+    margin: 0 1px;
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.item-promo span {
+    font-weight: 700;
+    color: var(--color-gold);
+    font-size: 1.2rem;
+    text-indent: 10px;
+    text-align: center;
+    flex: 1; 
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
 /* --- Navegação das Abas --- */
 .tabs-nav {
     text-align: center;
@@ -293,6 +347,8 @@ section {
     margin-top: 32px;
     border: solid 2px var(--color-dark);
     border-radius: 0 0 10px 10px; /* Bordas arredondadas apenas na parte inferior */
+    box-shadow: var(--shadow);
+    background-color: var(--color-white);
     padding: 10px;
 }
 
@@ -354,7 +410,7 @@ section {
     right: -1px;
     background-color: var(--color-gold);
     color: var(--color-white);
-    padding: 8px 30px;
+    padding: 8px 30px 8px 50px;
     font-size: 0.9rem;
     font-weight: 700;
     transform: rotate(35deg) translate(20px, -20px);
@@ -562,11 +618,13 @@ section {
 
     .location-content { flex-direction: column; }
     .logo-name { font-size: 1.5rem; }
-    .tab-link {
-        flex-direction: column; /* Coloca os links das abas em coluna */
-        margin: 8px; /* Espaçamento entre os links */
-    }
+    .tab-link { flex-direction: column; margin: 8px; }
     .hero-content { width: 430px; }
+
+    .name-promo { text-align: center; }
+    .text-promo { text-align: center; font-size: 1.2rem; }
+    .summary-promo { font-weight: 400; font-size: 1rem; margin-bottom: 10px; }
+    .item-promo { flex-direction: column; padding: 15px; gap: 10px;}
 }
 
 @media (max-width: 490px) {
