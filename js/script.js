@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    
-    /* Animação de entrada dos elementos (Scroll Reveal)
+
+    // Animação de entrada dos elementos (Scroll Reveal)
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     revealElements.forEach((el, index) => {
         el.style.transitionDelay = `${index * 100}ms`;
         revealObserver.observe(el);
-    }); */
+    }); 
 }); 
 
 // --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---

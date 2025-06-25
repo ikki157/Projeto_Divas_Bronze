@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-g">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Divas Bronze - O Brilho que Você Merece</title>
     
@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Navegação -->
-    <header id="main-header">
+<header id="main-header">
         <nav class="container">
             <a href="#inicio" class="logo-link">
                 <img id="logo-icon" class="logo-icon" src="images/DIVAS DO BRONZE.png" alt="Logo Espaço Divas Bronze">
@@ -24,7 +23,7 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#promocoes">Promoções</a></li>
-                <li><a href="#precos">Preços</a></li>
+                <li><a href="#precos">Serviços</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -34,171 +33,139 @@
         </nav>
     </header>
 
-<!-- Conteúdo Principal -->
- <!-- Hero -->
-    <main>
+<main>
         <section id="inicio">
             <div class="hero-content">
-                <h1 class="reveal">Espaço Divas Bronze</h1>
-                <p class="reveal">O brilho que você merece está aqui. Bronzeamento profissional com qualidade e conforto.</p>
-                <a href="#precos" class="btn reveal">Ver Preços</a>
+                <h1 class="reveal">O Brilho que Você Merece</h1>
+                <p class="reveal">Bronzeamento profissional com qualidade, conforto e resultados espetaculares. Realce sua beleza natural conosco.</p>
+                <a href="#promocoes" class="btn reveal">Ver Promoções</a>
             </div>
         </section>
         
-<!-- Promoções -->
-    <section id="promocoes">
-        <div class="container">
-        <h2 class="section-title" >Promoções</h2>
-            <div class="pricing-grid">
-
-                <div class="pricing-card reveal featured">
+        <section id="promocoes">
+            <div class="container">
+                <h2 class="section-title reveal">Promoções Imperdíveis</h2>
+                <div class="promocao-grid">
+                    <div class="promocao-card reveal featured">
+                        <div class="promocao-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
                         <h3 class="name-promo">Desconto das Amigas</h3>
-                            <p class="text-promo">Tragam suas amigas e ganhe descontos especiais</p>
+                        <p class="text-promo">Traga uma ou mais amigas e todas ganham um super desconto!</p>
+                        <ul class="features-list">
+                            <li class="item-promo">
+                                <span>Bronze de Cabine + Banho de Lua</span>
+                                <div><del>R$ 190,00</del> por <strong>R$ 150,00</strong> (cada)</div>
+                            </li>
+                            <li class="item-promo">
+                                <span>Bronze no Sol + Banho de Lua</span>
+                                <div><del>R$ 140,00</del> por <strong>R$ 120,00</strong> (cada)</div>
+                            </li>
+                        </ul>
+                        <summary class="summary-promo">OBS: O desconto é válido apenas quando o agendamento é feito em grupo.</summary>
+                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20Promo%C3%A7%C3%A3o%20das%20Amigas!" class="btn-promo" target="_blank">Agendar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precos">
+            <div class="container">
+                <h2 class="section-title reveal">Nossos Serviços</h2>
+
+                <div class="tabs-nav reveal">
+                    <button class="tab-link active" data-tab="servicos">Serviços Individuais</button>
+                    <button class="tab-link" data-tab="combos">Combos Especiais</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div id="servicos" class="tab-pane active">
+                        <div class="pricing-grid">
+                            <div class="pricing-card reveal">
+                                <div class="card-header"><h3>Banho de Lua</h3><p class="price">R$ 70</p></div>
                                 <ul class="features-list">
-                                    <li class="item-promo"> <span>Bronze de cabine</span> <del>190,00</del> por <span>150,00 (cada)</span>, já incluso o banho de lua </li>
-                                    <li class="item-promo"> <span>Bronze no sol</span> <del>140,00</del> por <span>120,00 (cada)</span>, já incluso o banho de lua</li>
+                                    <li><i class="fas fa-check"></i> Clareia os pelos do corpo</li>
+                                    <li><i class="fas fa-check"></i> Remove células mortas e hidrata</li>
+                                    <li><i class="fas fa-check"></i> Deixa a pele macia e luminosa</li>
                                 </ul>
-                            <summary class="summary-promo">OBS: O desconto é para quem trás amigas, individualmente o preço segue o valor do combo normal.</summary>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Preços -->
-  <!-- Preços Normais-->
-   <section id="precos">
-    <div class="container">
-        <h2 class="section-title reveal">Nossos Serviços</h2>
-
-        <div class="tabs-nav reveal">
-            <button class="tab-link active" data-tab="servicos">Serviços Individuais</button>
-            <button class="tab-link" data-tab="combos">Combos Especiais</button>
-        </div>
-
-        <div class="tabs-content">
-
-            <div id="servicos" class="tab-pane active">
-                <div class="pricing-grid">
-                    <div class="pricing-card reveal">
-                        <h3>Banho de Lua</h3>
-                        <p class="price">R$ 70</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Clareia os pelos do corpo</li>
-                            <li><i class="fas fa-check"></i> Remove células mortas</li>
-                            <li><i class="fas fa-check"></i> Hidratação profunda</li>
-                            <li><i class="fas fa-check"></i> Deixa a pele macia e luminosa</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                             <div class="pricing-card reveal">
+                                <div class="card-header"><h3>Bronze Natural</h3><p class="price">R$ 70</p></div>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Exposição solar segura e eficaz</li>
+                                    <li><i class="fas fa-check"></i> Cor dourada, uniforme e saudável</li>
+                                    <li><i class="fas fa-check"></i> A marquinha perfeita dos seus sonhos</li>
+                                </ul>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20Natural." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                            <div class="pricing-card reveal">
+                                <div class="card-header"><h3>Bronze no Paredão</h3><p class="price">R$ 120</p></div>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Resultado imediato e impactante</li>
+                                     <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
+                                     <li><i class="fas fa-check"></i> Ideal para quem tem pouco tempo</li>
+                                </ul>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20no%20Pared%C3%A3o." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pricing-card reveal">
-                        <h3>Clareamento de Pele e Pelos</h3>
-                        <p class="price">R$ 90</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Esfoliação e hidratação</li>
-                            <li><i class="fas fa-check"></i> Uniformiza o tom da pele</li>
-                            <li><i class="fas fa-check"></i> Remove manchas superficiais</li>
-                            <li><i class="fas fa-check"></i> Prepara a pele para um bronze perfeito</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Clareamento." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Bronze Natural</h3>
-                        <p class="price">R$ 70</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Bronzeamento com exposição solar segura</li>
-                            <li><i class="fas fa-check"></i> Cor dourada, uniforme e saudável</li>
-                            <li><i class="fas fa-check"></i> A marquinha perfeita dos seus sonhos</li>
-                            <li><i class="fas fa-check"></i> Produtos de alta qualidade</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20Natural." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Bronze no Paredão</h3>
-                        <p class="price">R$ 120</p>
-                        <ul class="features-list">
-                             <li><i class="fas fa-check"></i> Resultado imediato e impactante</li>
-                             <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
-                             <li><i class="fas fa-check"></i> Ideal para quem tem pouco tempo</li>
-                             <li><i class="fas fa-check"></i> Sessão única com resultado poderoso</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20Bronze%20no%20Pared%C3%A3o." class="btn-price" target="_blank">Agendar Agora</a>
+
+                    <div id="combos" class="tab-pane">
+                        <div class="pricing-grid">
+                            <div class="pricing-card reveal">
+                                <div class="card-header"><h3>Natural + Banho de Lua</h3><p class="price">R$ 140</p></div>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Clareamento de pelos e hidratação</li>
+                                    <li><i class="fas fa-check"></i> Bronzeado natural e uniforme</li>
+                                    <li><i class="fas fa-check"></i> Pele luminosa e marquinha espetacular</li>
+                                </ul>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20Natural%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                            <div class="pricing-card reveal featured">
+                                <div class="featured-badge">Mais Popular</div>
+                                <div class="card-header"><h3>Paredão + Banho de Lua</h3><p class="price">R$ 190</p></div>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Brilho instantâneo e hidratação</li>
+                                    <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
+                                    <li><i class="fas fa-check"></i> Resultado impactante em uma sessão</li>
+                                </ul>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20no%20Paredão%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                             <div class="pricing-card reveal">
+                                <div class="card-header"><h3>Paredão Impecável</h3><p class="price">R$ 250</p></div>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Clareador de Pele e Pelos</li>
+                                    <li><i class="fas fa-check"></i> Banho de Lua (Toque Macio)</li>
+                                    <li><i class="fas fa-check"></i> Bronze no Paredão (Cor Intensa)</li>
+                                </ul>
+                                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Pared%C3%A3o%20Impec%C3%A1vel." class="btn-price" target="_blank">Agendar Agora</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-  <!-- Combos -->
-            <div id="combos" class="tab-pane">
-                <div class="pricing-grid">
-                     <div class="pricing-card reveal">
-                        <h3>Bronze Natural + Banho de Lua</h3>
-                        <p class="price">R$ 140</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Clareamento de pelos e hidratação</li>
-                            <li><i class="fas fa-check"></i> Bronzeado natural e uniforme</li>
-                            <li><i class="fas fa-check"></i> Pele luminosa e marquinha espetacular</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20Natural%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                    <div class="pricing-card reveal featured">
-                        <div class="featured-badge">Mais Popular</div>
-                        <h3>Bronze no Paredão + Banho de Lua</h3>
-                        <p class="price">R$ 190</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Brilho instantâneo e hidratação</li>
-                            <li><i class="fas fa-check"></i> Cor intensa e marquinha definida</li>
-                            <li><i class="fas fa-check"></i> Resultado impactante em uma sessão</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20no%20Paredão%20%2B%20Banho%20de%20Lua." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                    <div class="pricing-card reveal">
-                        <h3>Combo Bronze Natural Completo</h3>
-                        <p class="price">R$ 200</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Clareador de Pele e Pelos</li>
-                            <li><i class="fas fa-check"></i> Banho de Lua (Hidratação)</li>
-                            <li><i class="fas fa-check"></i> Bronze Natural (Cor Dourada)</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Bronze%20Natural%20Completo." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                     <div class="pricing-card reveal">
-                        <h3>Combo Paredão Impecável</h3>
-                        <p class="price">R$ 250</p>
-                        <ul class="features-list">
-                            <li><i class="fas fa-check"></i> Clareador de Pele e Pelos</li>
-                            <li><i class="fas fa-check"></i> Banho de Lua (Toque Macio)</li>
-                            <li><i class="fas fa-check"></i> Bronze no Paredão (Cor Intensa)</li>
-                        </ul>
-                        <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20combo%20Pared%C3%A3o%20Impec%C3%A1vel." class="btn-price" target="_blank">Agendar Agora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
  
- <!-- Localização -->
         <section id="localizacao">
             <div class="container">
                 <h2 class="section-title reveal">Onde nos Encontrar</h2>
-                <div class="location-content">
-                    <div class="address-info reveal">
-                        <h3>Nosso Espaço</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Rua Paládio, 25 - Bairro Nova Canaã II</p>
+                <div class="location-content reveal">
+                    <div class="address-info">
+                        <h3><i class="fas fa-map-marker-alt"></i> Nosso Endereço</h3>
+                        <p>Rua Paládio, 25 - Bairro Nova Canaã II</p>
                         <p>Canaã dos Carajás, PA - CEP: 68537-000</p>
-                        <h4>Horários:</h4>
-                            <ul class="hours-list">
-                                <li>Segunda a Sexta - 17:20h ás 20h</li>
-                                <li>Sábado a Domingo - 7h ás 11h</li>
-                            </ul>
+                        <h3 class="hours-title"><i class="far fa-clock"></i> Horário de Funcionamento</h3>
+                        <ul class="hours-list">
+                            <li><strong>Segunda a Sexta:</strong> 17:20h às 20h</li>
+                            <li><strong>Sábado e Domingo:</strong> 7h às 11h</li>
+                        </ul>
                     </div>
-                    <div class="map-container reveal">
+                    <div class="map-container">
                         <iframe 
-
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0450117863097!2d-49.854303257695456!3d-6.51598717670733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92dd9d4e9c4afe79%3A0x80544972033b36de!2sR.%20Pal%C3%A1dio%2C%2025%2C%20Cana%C3%A3%20dos%20Caraj%C3%A1s%20-%20PA%2C%2068537-000!5e0!3m2!1spt-BR!2sbr!4v1750265713873!5m2!1spt-BR!2sbr" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0450117863097!2d-49.854303257695456!3d-6.51598717670733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92dd9d4e9c4afe79%3A0x80544972033b36de!2sR.%20Pal%C3%A1dio%2C%2025%2C%20Cana%C3%A3%20dos%20Caraj%C3%A1s%20-%20PA%2C%2068537-000!5e0!3m2!1spt-BR!2sbr!4v1750265713873!5m2!1spt-BR!2sbr"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
-
                         </iframe>
                     </div>
                 </div>
@@ -206,31 +173,27 @@
         </section>
     </main>
 
-<!-- Rodapé -->
-    <footer id="contato">
-    <div class="container footer-content">
-        <div class="footer-info">
-            <h4>Espaço Divas Bronze</h4>
-            <p>Rua Paládio, 25 - Nova Canaã II<br>Canaã dos Carajás, PA</p>
-        </div>
-        <div class="footer-contact">
-            <h4>Entre em Contato</h4>
-            <p><i class="fab fa-whatsapp"></i> (94) 99173-8560</p>
+<footer id="contato">
+        <div class="container footer-content">
+            <div class="footer-about reveal">
+                <h4>Espaço Divas Bronze</h4>
+                <p>Realçando a beleza da mulher com a marquinha perfeita. Qualidade e segurança em primeiro lugar.</p>
             </div>
-        <div class="footer-social">
-            <h4>Siga-nos</h4>
-            <a href="https://www.instagram.com/espacodasdivasbronze?utm_source=qr&igsh=eXhsN2c5Zm5raGxp" aria-label="Instagram"><i class="fab fa-instagram"></i>
-                <span>Pelo Instagram</span>
-            </a>
+            <div class="footer-contact reveal">
+                <h4>Entre em Contato</h4>
+                <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." target="_blank"><i class="fab fa-whatsapp"></i> (94) 99173-8560</a>
+            </div>
+            <div class="footer-social reveal">
+                <h4>Siga-nos</h4>
+                <a href="https://www.instagram.com/espacodasdivasbronze?utm_source=qr&igsh=eXhsN2c5Zm5raGxp" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2025 Espaço Divas Bronze. Todos os direitos reservados.</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2025 Espaço Divas Bronze. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-<!-- Botão de WhatsApp -->
-    <a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." class="whatsapp-float" target="_blank">
+<a href="https://wa.me/5594991738560?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
