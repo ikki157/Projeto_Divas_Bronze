@@ -77,11 +77,10 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-}
+}q
 
 .logo-icon {
-    width: 60px;
-    height: 60px;
+    width: 8px;
     margin-right: 15px;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -580,7 +579,7 @@ section {
     .hero-content h1 { font-size: 2.5rem; }
     .hero-content { padding: 1.5rem; }
     .logo-name { display: none; }
-    .logo-icon { width: 50px; height: 50px; }
+    .logo-icon { width: 16px;}
     .btn { padding: 15px 30px; }
     .address-info { font-size: 0.9rem; }
 }
