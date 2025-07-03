@@ -256,12 +256,12 @@ section {
 .promocao-card .features-list { list-style: none; padding: 0; margin-bottom: 25px; }
 .promocao-card .item-promo {
     display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-    padding: 15px; background-color: #fdfaf6; border-radius: 10px; margin-bottom: 15px;
+    padding: 15px; background-color: #fdfaf6; border-radius: 10px; margin: 15px;
     border-left: 5px solid var(--color-gold);
 }
-.promocao-card .item-promo span { font-weight: 500; font-size: 1.1rem; color: var(--color-dark); margin-bottom: 8px; }
-.promocao-card .item-promo div { font-size: 1.2rem; }
-.promocao-card .item-promo del { color: #999; margin-right: 10px; }
+.promocao-card .item-promo span { font-weight: 500; font-size: 1.1rem; color: var(--color-dark); margin: 16px; text-align: center;}
+.promocao-card .item-promo div { font-size: 1.2rem; text-align: center;}
+.promocao-card .item-promo del { color: #999; margin: 10px; }
 .promocao-card .item-promo strong { color: var(--color-bronze); font-weight: 700; }
 .promocao-card .summary-promo { font-style: italic; color: #777; margin-bottom: 30px; }
 .btn-promo {
