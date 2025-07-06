@@ -459,23 +459,25 @@ section {
 }
 
 /* --- SEÇÃO IMPORTANTE --- */
+
 #importante {
-    background-color: var(--color-white);
-    color: var(--color-dark);
-    padding: 80px 0;
-    box-shadow: var(--shadow);
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 16px;
-    padding: 80px;
+    background: linear-gradient(to bottom, #fffaf0, var(--color-light));
+    padding: 100px 0;
 }
 
-#importante h2 {
-    font-family: var(--font-heading);
+#importante .container {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 15px 50px rgba(44, 34, 28, 0.1);
+    border: 1px solid #f0e6db;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#importante .section-title {
     font-size: 2.5rem;
-    margin-top: -30px;
     margin-bottom: 40px;
-    text-align: center;
 }
 
 #importante ul {
@@ -484,11 +486,44 @@ section {
     margin: 0;
 }
 
-#importante li {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+#importante .container > ul > li {
+    align-items: baseline;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0e6db;
 }
 
+#importante .container > ul > li:last-child {
+    border-bottom: none;
+}
+
+#importante .fa-check {
+    color: var(--color-gold);
+    margin-right: 15px;
+    font-size: 1.1rem; 
+}
+
+#importante li ul,
+#importante li ul li {
+    display: inline; 
+    padding: 0;
+    border: none;
+    font-size: 1.1rem; 
+    font-weight: 400; 
+    color: var(--color-bronze);
+}
+
+#importante li ul::before {
+    content: ' (Observação: trazer '; 
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+#importante li ul::after {
+    content: ')';
+    font-weight: 500;
+}
 
 /* --- SEÇÃO DE LOCALIZAÇÃO --- */
 #localizacao {
@@ -648,4 +683,18 @@ section {
     .logo-icon { width: 50px;}
     .btn { padding: 15px 30px; }
     .address-info { font-size: 0.9rem; }
+
+    #importante .container { padding: 20px; border-radius: 10px; width: 90%; }
+    #importante .section-title { font-size: 2rem; margin-bottom: 30px; }
+    #importante ul > li { font-size: 1rem; padding: 15px 0; }
+    #importante .fa-check { font-size: 1rem; margin-right: 10px; }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+
 }
