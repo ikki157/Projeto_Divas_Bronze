@@ -439,6 +439,57 @@ section {
     width: 200px;
 }
 
+.arrow-down {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: var(--color-bronze);
+    text-align: center;
+}
+
+.preco-summary {
+    margin: 20px;
+    font-size: 1rem;
+    color: var(--color-gold);
+    text-align: center;
+}
+
+.preco-summary i {
+    color: var(--color-gold);
+    margin-right: 5px;
+}
+
+/* --- SEÇÃO IMPORTANTE --- */
+#importante {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 80px 0;
+    box-shadow: var(--shadow);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 80px;
+}
+
+#importante h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#importante ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#importante li {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
 /* --- SEÇÃO DE LOCALIZAÇÃO --- */
 #localizacao {
     background-color: #fffaf0;
