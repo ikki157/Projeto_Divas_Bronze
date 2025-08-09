@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         const icon = menuToggle.querySelector('i');
-        // Troca o ícone de barras para 'X' e vice-versa
         if (navLinks.classList.contains('active')) {
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-times');
@@ -39,22 +38,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-}); 
+    
+    // --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabPanes = document.querySelectorAll('.tab-pane');
 
-// --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---
-const tabLinks = document.querySelectorAll('.tab-link');
-const tabPanes = document.querySelectorAll('.tab-pane');
+    tabLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const tabId = link.getAttribute('data-tab');
 
-tabLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        const tabId = link.getAttribute('data-tab');
+            // Desativa todas as abas e links
+            tabLinks.forEach(item => item.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
 
-        // Desativa todas as abas e links
-        tabLinks.forEach(item => item.classList.remove('active'));
-        tabPanes.forEach(pane => pane.classList.remove('active'));
-
-        // Ativa o link clicado e a aba correspondente
-        link.classList.add('active');
-        document.getElementById(tabId).classList.add('active');
+            // Ativa o link clicado e a aba correspondente
+            link.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        });
     });
 });
