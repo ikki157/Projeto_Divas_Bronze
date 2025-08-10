@@ -426,13 +426,6 @@ section {
     position: relative;
 }
 
-.servico-img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    display: block;
-}
 
 .featured-badge-list {
     position: absolute;
@@ -752,8 +745,6 @@ section {
     #importante .section-title { font-size: 2rem; margin-bottom: 30px; }
     #importante ul > li { font-size: 1rem; padding: 15px 0; }
     #importante .fa-check { font-size: 1rem; margin-right: 10px; }
-
-    .servico-img { width: 200px; justify-content: center; margin: 0 auto 20px auto; display: block; };
 
     .whatsapp-float {
         width: 50px;
