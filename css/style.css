@@ -419,6 +419,7 @@ section {
     background-color: #fdfaf6;
     padding: 25px;
     border-top: 1px solid #f0e6db;
+    flex-direction: row-reverse;
 }
 
 .servico-media {
@@ -454,6 +455,7 @@ section {
 .servico-detalhes .features-list {
     padding: 0;
     margin-bottom: 30px;
+    margin-left: 16px;
 }
 
 .servico-detalhes .features-list li {
