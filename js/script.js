@@ -1,15 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Efeito de scroll na barra de navegação
-    const header = document.getElementById('main-header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
     // FUNCIONALIDADE DO MENU HAMBÚRGUER
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -40,20 +30,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     // --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---
-    const tabLinks = document.querySelectorAll('.tab-link');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+const tabLinks = document.querySelectorAll('.tab-link');
+const tabPanes = document.querySelectorAll('.tab-pane');
 
-    tabLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const tabId = link.getAttribute('data-tab');
+tabLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const tabId = link.getAttribute('data-tab');
 
-            // Desativa todas as abas e links
-            tabLinks.forEach(item => item.classList.remove('active'));
-            tabPanes.forEach(pane => pane.classList.remove('active'));
+        // Desativa todas as abas e links
+        tabLinks.forEach(item => item.classList.remove('active'));
+        tabPanes.forEach(pane => pane.classList.remove('active'));
 
-            // Ativa o link clicado e a aba correspondente
-            link.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        });
+        // Ativa o link clicado e a aba correspondente
+        link.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
     });
+});
 });
