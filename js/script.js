@@ -29,6 +29,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
+        // EFEITO SCROLLED NO CABEÇALHO
+        const mainHeader = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                mainHeader.classList.add('scrolled');
+            } else {
+                mainHeader.classList.remove('scrolled');
+            }
+        });
+    
     // --- FUNCIONALIDADE DAS ABAS DE PREÇOS ---
 const tabLinks = document.querySelectorAll('.tab-link');
 const tabPanes = document.querySelectorAll('.tab-pane');
